@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>User Login</title>
+</head>
+<body>
+    <center>
+     <h1><font color="orange"> User Login</font></h1>
+<form id="loginForm">
+    <label><strong>user name :</strong></label>
+    <input type="text" id="username" placeholder="Username" ><br><br>
+    <label><strong>password :</strong></label>
+    <input type="password" id="password" placeholder="Password" ><br><br>
+    <button type="submit">Login</button><a href="task 4.html">login</a>
+    </center>
+    
+</form>
+
+<script>
+    <!DOCTYPE html>
+<html>
+<head>
+<title>User Login</title>
+</head>
+<body>
+    <center>
+     <h1><font color="orange"> User Login</font></h1>
+<form id="loginForm">
+    <label><strong>user name :</strong></label>
+    <input type="text" id="username" placeholder="Username" ><br><br>
+    <label><strong>password :</strong></label>
+    <input type="password" id="password" placeholder="Password" ><br><br>
+    <button type="submit">Login</button><a href="task 4.html">login</a>
+    </center>
+    
+</form>
+
+<script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            if (username.trim() === '' || password.trim() === '') {
+                alert('Please enter both username and password.');
+                return;
+            }
+            alert('Login successful!');
+        });
+</script>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7d2-srhNAXQ_lBQ-RDH-71YCU-e-w6uNUiA&usqp=CAU);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+    center {
+        margin-top: 100px;
+    }
+    #loginForm {
+        max-width: 400px;
+        padding: 20px;
+        border: 3px solid #1f1d1e;
+        border-radius: 10px;
+        background-color: antiquewhite;
+        background: transparent;
+    }
+    label {
+        font-weight: bold;
+        color: rgb(223, 226, 22);
+    }
+    input[type="text"],
+    input[type="password"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #f01193;
+        border-radius: 3px;
+    }
+    button[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+</style>
+</body>
+</html>
+

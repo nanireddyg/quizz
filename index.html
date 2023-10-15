@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Quiz Application</title>
+    
+   
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+            margin: 0;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #2c3e50;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            background-color: #34495e;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .feature {
+            flex: 0 0 calc(33.33% - 20px);
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .feature h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .feature p {
+            font-size: 16px;
+        }
+
+        .call-to-action {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .cta-button {
+            padding: 12px 24px;
+            font-size: 18px;
+            background-color: #27ae60;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .cta-button:hover {
+            background-color: #219653;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Quiz Application</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#" data-toggle="modal" data-target="#signupModal">Sign Up</a>
+            <a href="#" data-toggle="modal" data-target="#loginModal">Log In</a>
+            <a href="#" onclick="logout()" style="display: none;" id="logoutLink">Log Out</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Welcome to our Quiz Application</h1>
+        <p>
+            Test your knowledge with our fun and challenging quizzes. Choose from a variety of categories, answer
+            questions, and see how well you perform against others on our leaderboard.
+        </p>
+
+        <div class="features">
+            <div class="feature">
+                <h2>Wide Range of Quizzes</h2>
+                <p>Explore quizzes on various topics, including General Knowledge, Science, History, and more.</p>
+            </div>
+            <div class="feature">
+                <h2>Track Your Progress</h2>
+                <p>Create an account to track your quiz performance and improve your scores over time.</p>
+            </div>
+            <div class="feature">
+                <h2>Compete with Friends</h2>
+                <p>Challenge your friends to see who can achieve the highest score on our leaderboards.</p>
+            </div>
+        </div>
+
+        <div class="call-to-action">
+            <button class="cta-button" onclick="toggleQuizOrLogin()">Start Quiz</button>
+        </div>
+</body>
+
+</html>
